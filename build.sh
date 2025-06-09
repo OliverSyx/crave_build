@@ -30,6 +30,12 @@ echo "=================="
 echo "Clone KT success"
 echo "=================="
 
+rm -rf vendor/private/keys
+git clone --depth=1 https://github.com/OliverSyx/android_vendor_private_keys -b BlueOS vendor/private/keys
+echo "=================="
+echo "Clone KEYS success"
+echo "=================="
+
 rm -rf vendor/xiaomi/mojito-leicacamera
 git clone --depth=1 https://gitlab.com/pnplusplus/android_vendor_xiaomi_mojito-leicacamera vendor/xiaomi/mojito-leicacamera
 echo "============================"
