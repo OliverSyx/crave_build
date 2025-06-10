@@ -49,7 +49,7 @@ echo "Repo SYNC success"
 echo "=================="
 
 # Set up build environment
-source build/envsetup.sh
+. build/envsetup.sh
 
 # Lunch
 lunch lineage_mojito_userdebug
