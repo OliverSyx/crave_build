@@ -52,7 +52,7 @@ echo "=================="
 . build/envsetup.sh
 
 # Lunch
-lunch lineage_mojito_userdebug
+lunch lineage_mojito-userdebug
 
 # Make cleaninstall
 make installclean
