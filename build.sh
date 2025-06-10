@@ -13,7 +13,7 @@ echo "=================="
 
 # Clone Device tree repository
 rm -rf device/xiaomi/mojito
-git clone --depth=1 https://github.com/OliverSyx/android_device_xiaomi_mojito -b BlueOS device/xioami/mojito
+git clone --depth=1 https://github.com/OliverSyx/android_device_xiaomi_mojito -b BlueOS device/xiaomi/mojito
 echo "=================="
 echo "Clone DT success"
 echo "=================="
