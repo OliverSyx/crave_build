@@ -1,6 +1,11 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests/
+rm -rf device/xiaomi/mojito
+rm -rf vendor/xiaomi/mojito
+rm -rf kernel/xiaomi/mojito
+rm -rf vendor/private/keys
+rm -rf vendor/xiaomi/mojito-leicacamera
 echo "=================="
 echo "Remove LOCAL MANIFEST success"
 echo "=================="
@@ -12,31 +17,26 @@ echo "Repo INIT success"
 echo "=================="
 
 # Clone Device tree repository
-rm -rf device/xiaomi/mojito
-git clone --depth=1 https://github.com/OliverSyx/android_device_xiaomi_mojito -b BlueOS device/xiaomi/mojito
+git clone https://github.com/OliverSyx/android_device_xiaomi_mojito -b BlueOS device/xiaomi/mojito
 echo "=================="
 echo "Clone DT success"
 echo "=================="
 
-rm -rf vendor/xiaomi/mojito
 git clone --depth=1 https://github.com/OliverSyx/android_vendor_xiaomi_mojito -b BlueOS vendor/xiaomi/mojito
 echo "=================="
 echo "Clone VT success"
 echo "=================="
 
-rm -rf kernel/xiaomi/mojito
 git clone --depth=1 https://github.com/OliverSyx/android_kernel_xiaomi_mojito -b BlueOS kernel/xiaomi/mojito
 echo "=================="
 echo "Clone KT success"
 echo "=================="
 
-rm -rf vendor/private/keys
 git clone --depth=1 https://github.com/OliverSyx/android_vendor_private_keys -b BlueOS vendor/private/keys
 echo "=================="
 echo "Clone KEYS success"
 echo "=================="
 
-rm -rf vendor/xiaomi/mojito-leicacamera
 git clone --depth=1 https://gitlab.com/pnplusplus/android_vendor_xiaomi_mojito-leicacamera vendor/xiaomi/mojito-leicacamera
 echo "============================"
 echo "Clone LEICA success"
