@@ -5,7 +5,7 @@ pd sh ubuntu -- crave -n devspace
 ```
 
 ```bash
-crave run --no-patch -- "curl https://raw.githubusercontent.com/OliverSyx/crave_build/refs/heads/BlueOS/build.sh | bash"
+crave run --no-patch -- "curl https://raw.githubusercontent.com/OliverSyx/crave_build/refs/heads/lineage-20.0/build.sh | bash"
 ```
 
 Install crave 
