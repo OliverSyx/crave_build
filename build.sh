@@ -18,16 +18,17 @@ echo "============================"
 echo "Clone local_manifest success"
 echo "============================"
 
-git clone --depth=1 https://gitlab.com/pnplusplus/android_vendor_xiaomi_mojito-leicacamera vendor/xiaomi/mojito-leicacamera
-echo "==================="
-echo "Clone LEICA success"
-echo "==================="
-
 # Sync the repositories
 /opt/crave/resync.sh
 echo "================="
 echo "Repo SYNC success"
 echo "================="
+
+# Leica Camera
+git clone --depth=1 https://gitlab.com/pnplusplus/android_vendor_xiaomi_mojito-leicacamera vendor/xiaomi/mojito-leicacamera
+echo "==================="
+echo "Clone LEICA success"
+echo "==================="
 
 # Set up build environment
 . build/envsetup.sh
