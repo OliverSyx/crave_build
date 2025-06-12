@@ -33,7 +33,7 @@ echo "================="
 . build/envsetup.sh
 
 # Lunch
-lunch lineage_mojito-userdebug
+brunch mojito userdebug
 
 # Make cleaninstall
 make installclean
