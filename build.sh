@@ -1,6 +1,10 @@
 #!/bin/bash
 
 rm -rf .repo/local_manifests
+rm -rf device/xiaomi/mojito
+rm -rf vendor/xiaomi/mojito
+rm -rf kernel/xiaomi/mojito
+rm -rf vendor/private/keys
 rm -rf vendor/xiaomi/mojito-leicacamera
 echo "=================="
 echo "Remove LOCAL MANIFEST success"
