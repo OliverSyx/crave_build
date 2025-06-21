@@ -12,6 +12,9 @@ echo "=================="
 
 # Rom source repo
 repo init -u https://github.com/SparkOS-Next/manifest -b pyro-next
+
+# Local
+git clone -b spark https://github.com/OliverSyx/local_manifests.git .repo/local_manifests
 echo "=================="
 echo "Repo INIT success"
 echo "=================="
